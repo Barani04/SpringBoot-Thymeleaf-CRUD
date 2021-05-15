@@ -10,7 +10,7 @@
 		<h1>Update Employee</h1>
 		<hr>
 		
-		<form action = "#" th:action="@{/updateEmployee}" th:object ="${employee}" method="POST">
+		<form action = "#" th:action="@{/saveEmployee}" th:object ="${employee}" method="POST">
 		
 			<input type="hidden" th:field="*{empid}" />
 			

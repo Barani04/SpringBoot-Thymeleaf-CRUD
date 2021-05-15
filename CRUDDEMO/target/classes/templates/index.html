@@ -31,8 +31,8 @@
 					<td th:text = "${employee.salary}"></td>
 					<td th:text = "${employee.mailId}"></td>
 					<td>
-						<a type="button" class ="btn btn-warning col-4" th:href= "@{/updateEmployeeForm/{empid}(empid=$(employee.empid))}"> Update </a>
-						<a type="button" class ="btn btn-danger col-4" th:href= "@{/deleteEmployee/{empid}(empid=$(employee.empid))}"> Delete </a>
+						<a type="button" class ="btn btn-warning col-4" th:href= "@{/updateEmployeeForm/{empid}(empid=${employee.empid})}"> Update </a>
+						<a type="button" class ="btn btn-danger col-4" th:href= "@{/deleteEmployee/{empid}(empid=${employee.empid})}"> Delete </a>
 					</td>
 				</tr>
 			</tbody>
